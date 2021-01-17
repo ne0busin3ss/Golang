@@ -25,7 +25,7 @@ func main() {
 	// `default` case in this example as well.
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
-		fmt.Println("It's the weekend")
+		fmt.Println("It's the week-end")
 	default:
 		fmt.Println("It's a weekday")
 	}
