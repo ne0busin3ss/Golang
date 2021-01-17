@@ -25,7 +25,7 @@ func main() {
 	}
 
 	var status string
-	if grade >= 70 {
+	if grade >= 65 {
 		status = "passing"
 	} else {
 		status = "failing"
