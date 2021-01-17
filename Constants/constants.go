@@ -14,7 +14,7 @@ func main() {
 
 	// A `const` statement can appear anywhere a `var`
 	// statement can.
-	const n = 500000000
+	const n = 400000000
 
 	// Constant expressions perform arithmetic with
 	// arbitrary precision.
