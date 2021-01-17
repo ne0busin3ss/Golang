@@ -1,8 +1,8 @@
-
 // Go supports _constants_ of character, string, boolean,
 // and numeric values.
 
 package main
+
 import "fmt"
 import "math"
 

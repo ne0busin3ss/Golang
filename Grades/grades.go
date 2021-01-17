@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -26,7 +25,7 @@ func main() {
 	}
 
 	var status string
-	if grade >= 60 {
+	if grade >= 70 {
 		status = "passing"
 	} else {
 		status = "failing"

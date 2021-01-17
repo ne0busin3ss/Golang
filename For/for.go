@@ -2,7 +2,9 @@
 // three basic types of `for` loops.
 
 package main
+
 import "fmt"
+
 func main() {
 
 	// The most basic type, with a single condition.

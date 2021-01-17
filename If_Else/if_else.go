@@ -1,10 +1,9 @@
-
 package main
+
 import "fmt"
 
 // Branching with `if` and `else` in Go is
 // straight-forward.
-
 
 func main() {
 
