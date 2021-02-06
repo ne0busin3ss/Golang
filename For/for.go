@@ -27,7 +27,7 @@ func main() {
 		break
 	}
 
-	// You can also `continue` to the next iteration of 
+	// You can also `continue` to the next iteration of
 	// the loop.
 	for n := 0; n <= 13; n++ {
 		if n%2 == 0 {
@@ -37,4 +37,6 @@ func main() {
 	}
 }
 
-/* 'n' is the vaiable for the number. %2 == 0 tells go to divide the number by 2 and if remander is 0, it is even; continue to the next iteration -don't display even numbers.*/ 
+/* 'n' is the vaiable for the number. %2 == 0 tells go to divide the number
+by 2 and if remander is 0, it is even; continue to the next iteration
+-don't display even numbers.*/
