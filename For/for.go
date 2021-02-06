@@ -37,6 +37,6 @@ func main() {
 	}
 }
 
-/* 'n' is the vaiable for the number. %2 == 0 tells go to divide the number
+/*'n' is the vaiable for the number. %2 == 0 tells go to divide the number
 by 2 and if remander is 0, it is even; continue to the next iteration
 -don't display even numbers.*/
