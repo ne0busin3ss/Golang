@@ -15,7 +15,7 @@ func main() {
 	}
 
 	// A classic initial/condition/after `for` loop.
-	for j := 7; j <= 15; j++ {
+	for j := 7; j <= 7; j++ {
 		fmt.Println(j)
 	}
 
@@ -29,7 +29,7 @@ func main() {
 
 	// You can also `continue` to the next iteration of
 	// the loop.
-	for n := 0; n <= 13; n++ {
+	for n := 0; n <= 9; n++ {
 		if n%2 == 0 {
 			continue
 		}
