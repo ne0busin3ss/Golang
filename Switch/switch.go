@@ -11,7 +11,7 @@ import (
 func main() {
 
 	// Here's a basic `switch`.
-	i := 3
+	i := 1
 	fmt.Print("Write ", i, " as ")
 	switch i {
 	case 1:
