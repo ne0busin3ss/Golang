@@ -29,7 +29,7 @@ func main() {
 
 	// You can also `continue` to the next iteration of
 	// the loop.
-	for n := 0; n <= 9; n++ {
+	for n := 0; n <= 11; n++ {
 		if n%2 == 0 {
 			continue
 		}
@@ -37,5 +37,5 @@ func main() {
 	}
 }
 
-/*'n' is the vaiable for the number. %2 == 0 tells go to divide the number by 2 and if the remander is 0, it is even; continue to the next iteration
--don't display even numbers.*/
+/*'n' is the variable for the number. %2 == 0 tells go to divide the number by 2 and if the remainder is 0,
+it is even; continue to the next iteration -don't display even numbers.*/
