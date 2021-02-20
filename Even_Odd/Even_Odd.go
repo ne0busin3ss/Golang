@@ -18,7 +18,7 @@ func main() {
 
 /*Example to check Number is even or odd
 In the above program. Scanlin function is used to take the input number from user console ie command line.
-user entereda number is stored in number variableNow checking number is even or odd, we used modulus
-operator % and checkremainder is zero with divisible by 2. conditional structure if else statement  is used.
-the if the numberis divisible by 2, then it is even number, an else odd number
+user entered number is stored in number variableNow checking number is even or odd, we used modulus
+operator % and check remainder is zero with divisible by 2. conditional structure if else statement  is used.
+the if the number is divisible by 2, then it is even number, an else odd number
 */
