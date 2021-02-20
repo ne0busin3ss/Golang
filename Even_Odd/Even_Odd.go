@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Enter a number please : ")
+	fmt.Print("Dude... enter a number please : ")
 	var n int
 	fmt.Scanln(&n)
 
