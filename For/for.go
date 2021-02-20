@@ -9,7 +9,7 @@ func main() {
 
 	// The most basic type, with a single condition.
 	i := 1
-	for i <= 5 {
+	for i <= 7 {
 		fmt.Println(i)
 		i = i + 1
 	}
