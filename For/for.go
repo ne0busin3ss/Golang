@@ -9,7 +9,7 @@ func main() {
 
 	// The most basic type, with a single condition.
 	i := 1
-	for i <= 7 {
+	for i <= 3 {
 		fmt.Println(i)
 		i = i + 1
 	}
@@ -37,5 +37,6 @@ func main() {
 	}
 }
 
-/*'n' is the variable for the number. %2 == 0 tells go to divide the number by 2 and if the remainder is 0,
-it is even; continue to the next iteration -don't display even numbers.*/
+/*'n' is the variable for the number. %2 == 0 tells go to divide the number by 2 and
+if the remainder is 0, it is even; continue to the next iteration -don't display even
+numbers.*/
