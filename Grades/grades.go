@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Print("Please enter a grade: ")
+	fmt.Print("Please enter a grade superstar: ")
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 
