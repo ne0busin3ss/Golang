@@ -13,7 +13,7 @@ func readword(ch chan string) {
 }
 
 func timeout(t chan bool) {
-	time.Sleep(15 * time.Second)
+	time.Sleep(13 * time.Second)
 	t <- false
 }
 
