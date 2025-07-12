@@ -1,13 +1,13 @@
 package main
 
 import (
-
+	"fmt"
 	"net/http"
 	"os"
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("<h1>Hello World!</h1>"))
+	w.Write([]byte("<h1>Hello World! I'm Super Dave!</h1>"))
 }
 
 func main() {
@@ -19,5 +19,6 @@ func main() {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", indexHandler)
+	fmt.Println("Server starting on port:", port)
 	http.ListenAndServe(":"+port, mux)
 }
