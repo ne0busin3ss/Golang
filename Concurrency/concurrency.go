@@ -8,17 +8,23 @@ import (
 	"time"
 )
 
-func readword(ch chan<- string) {
+type result struct {
+	val string
+	err error
+}
+
+func readword(ch chan<- result) {
 	fmt.Println("Type a word, then hit Enter.")
 	scanner := bufio.NewScanner(os.Stdin)
 	if scanner.Scan() {
-		ch <- scanner.Text()
+		ch <- result{val: scanner.Text()}
 	} else {
 		if err := scanner.Err(); err != nil {
-			fmt.Println("Error reading input:", err)
+			ch <- result{err: err}
+		} else {
+			// EOF
+			ch <- result{err: fmt.Errorf("EOF")}
 		}
-		// If EOF or error, we might want to close or send a signal,
-		// but for this simple example, we'll just return.
 	}
 }
 
@@ -28,12 +34,16 @@ func main() {
 	defer cancel() // It's important to call cancel to release resources.
 
 	// Use a buffered channel to prevent the readword goroutine from leaking.
-	ch := make(chan string, 1)
+	ch := make(chan result, 1)
 	go readword(ch)
 
 	select {
-	case word := <-ch:
-		fmt.Println("Received", word)
+	case res := <-ch:
+		if res.err != nil {
+			fmt.Println("Error reading input:", res.err)
+		} else {
+			fmt.Println("Received", res.val)
+		}
 	case <-ctx.Done():
 		fmt.Println("Timeout.")
 	}
