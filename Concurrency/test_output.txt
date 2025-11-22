@@ -1,0 +1,8 @@
+=== RUN   TestReadWord_Success
+Type a word, then hit Enter.
+--- PASS: TestReadWord_Success (0.00s)
+=== RUN   TestReadWord_Timeout
+Type a word, then hit Enter.
+--- PASS: TestReadWord_Timeout (0.10s)
+PASS
+ok  	command-line-arguments	0.102s
