@@ -10,7 +10,7 @@ import (
 )
 
 // passingGrade defines the minimum grade to pass.
-const passingGrade = 70.0
+const passingGrade = 75.0
 
 // getStatus determines if a grade is passing or failing.
 func getStatus(grade float64) string {
