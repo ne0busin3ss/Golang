@@ -1,17 +1,25 @@
 package main
 
 import (
+	"bufio"
 	"context"
 	"fmt"
+	"os"
 	"time"
 )
 
 func readword(ch chan<- string) {
 	fmt.Println("Type a word, then hit Enter.")
-	var word string
-	// In a real-world application, you should handle the error returned by Scanf.
-	fmt.Scanf("%s", &word)
-	ch <- word
+	scanner := bufio.NewScanner(os.Stdin)
+	if scanner.Scan() {
+		ch <- scanner.Text()
+	} else {
+		if err := scanner.Err(); err != nil {
+			fmt.Println("Error reading input:", err)
+		}
+		// If EOF or error, we might want to close or send a signal,
+		// but for this simple example, we'll just return.
+	}
 }
 
 func main() {
