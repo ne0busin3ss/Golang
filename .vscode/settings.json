@@ -1,3 +1,5 @@
 {
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "go.toolsManagement.autoUpdate": true,
+    "go.toolsGopath": ""
 }
